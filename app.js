@@ -23,6 +23,7 @@ const isMobile = () => {
 
 window.addEventListener("load", e => {
   if (isMobile()) {
-    window.location = "https://www.google.com";
+    // window.location = "https://www.google.com";
+    window.location = "./mobile.html";
   }
 });
