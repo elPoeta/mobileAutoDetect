@@ -1,28 +1,17 @@
-const isAndroid = () => {
-  if (navigator.userAgent.match(/android/i)) return true;
-  return false;
-};
+const isAndroid = () => (navigator.userAgent.match(/android/i)) ? true : false;
 
-const isIphone = () => {
-  if (navigator.userAgent.match(/iphone/i)) return true;
-  return false;
-};
+const isIphone = () => (navigator.userAgent.match(/iphone/i)) ? true : false;
 
+const isIpad = () => (navigator.userAgent.match(/ipad/i)) ? true : false;
 
-const isIpad = () => {
-  if (navigator.userAgent.match(/ipad/i)) return true;
-  return false;
-};
+const isIpod = () => (navigator.userAgent.match(/ipod/i)) ? true : false;
 
-const isIpod = () => {
-  if (navigator.userAgent.match(/ipod/i)) return true;
-  return false;
-};
 
 const isMobile = () => {
   if (isAndroid()) return true;
   else if (isIphone()) return true;
   else if (isIpad()) return true;
+  else if (isIpod()) return true;
   return false;
 };
 
