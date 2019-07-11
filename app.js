@@ -9,21 +9,21 @@ const userAgent = navigator.userAgent.toLowerCase();
 // Detects if the current device is an iPhone.
 const isIphone = () => {
   if (userAgent.search(deviceIphone) > -1) return true;
-  else return false;
+  return false;
 };
 
 //**************************
 // Detects if the current device is an iPod Touch.
 const isIpod = () => {
   if (userAgent.search(deviceIpod) > -1) return true;
-  else return false;
+  return false;
 };
 
 //**************************
 // Detects if the current device is an Android.
 const isAndroid = () => {
   if (userAgent.search(deviceAndroid) > -1) return true;
-  else return false;
+  return false;
 };
 
 //**************************
